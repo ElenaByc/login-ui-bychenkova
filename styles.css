@@ -1,0 +1,153 @@
+@font-face {
+    font-family: 'Merriweather Bold';
+    src: url("./assets/fonts/Merriweather-Bold.ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url("./assets/fonts/Merriweather-Regular.ttf");
+    font-weight: 400;
+}
+
+
+:root {
+    --color-aqua: #4AB6C3;
+    --color-aqua-light: #5DBEC1;
+    --color-blue: #2363AB;
+    --color-dark-blue: #1f4184;
+    --color-gray: #424242;
+    --color-black: #000000;
+    --color-white: #ffffff;
+}
+
+html {
+    font-family: 'Merriweather', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+
+body {
+    background: url(./assets/img/digital-art-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+
+.signin-form {
+    max-width: 90vw;
+    padding: 2rem;
+    background-color: aliceblue;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 4px 4px rgba(13, 96, 111, 0.5);
+}
+
+.form__header {
+    margin: 0;
+    font-family: 'Merriweather Bold', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    color: var(--color-blue);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.form__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 2rem;
+    width: 30rem;
+    max-width: 100%;
+    color: var(--color-dark-blue);
+}
+
+.form__field {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form__field input {
+    width: 100%;
+    height: 2.2rem;
+    background-color: var(--color-white);
+    box-shadow: inset 0px 0px 3px rgba(35, 99, 171, 0.3), inset 0px 2px 3px rgba(35, 99, 171, 0.1);
+    border-radius: 0.5rem;
+    border: none;
+    padding: 0.6rem;
+    color: var(--color-grey);
+}
+
+.form__field input:focus {
+    outline-color: var(--color-blue);
+}
+
+.signin-btn {
+    width: 100%;
+    background-color: var(--color-aqua);
+    font-family: 'Merriweather Bold', sans-serif;
+    font-size: 1rem;
+    line-height: 2.2rem;
+    color: aliceblue;
+    border-radius: 0.5rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+    margin-top: 1rem;
+}
+
+.signin-btn:hover {
+    background-color: var(--color-aqua-light);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+        0px 2px 3px rgba(13, 96, 111, 0.16),
+        0 0 0 2px var(--color-aqua) inset,
+        0 0 0 3px var(--color-white) inset;
+}
+
+.signin-btn:active {
+    transform: scale(0.98);
+}
+
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 16px;
+        line-height: 28px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    html {
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
+
+@media screen and (max-width: 230px) {
+    html {
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
