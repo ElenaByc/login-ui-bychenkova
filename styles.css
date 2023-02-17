@@ -160,4 +160,8 @@ main {
     .form__content {
         row-gap: 1rem;
     }
+
+    .form__header {
+        margin-bottom: 0;
+    }
 }
