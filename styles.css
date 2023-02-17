@@ -151,3 +151,17 @@ main {
         line-height: 18px;
     }
 }
+
+@media screen and (max-height: 500px) {
+    .signin-form {
+        padding: 1rem;
+    }
+
+    .form__content {
+        row-gap: 1rem;
+    }
+
+    .form__header {
+        margin-bottom: 0;
+    }
+}
