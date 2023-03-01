@@ -28,7 +28,6 @@ html {
     line-height: 32px;
 }
 
-
 body {
     background: url(./assets/img/digital-art-bg.jpg);
     background-repeat: no-repeat;
@@ -55,6 +54,8 @@ main {
 
 .signin-form {
     max-width: 90vw;
+    min-width: 12rem;
+    min-height: fit-content;
     padding: 2rem;
     background-color: aliceblue;
     border-radius: 1rem;
